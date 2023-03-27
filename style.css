@@ -1,0 +1,22 @@
+body{
+ height: 98vh;
+ /* background-color: black;
+ background-image: url(imagens/wallpaper002.jpg);
+ background-position: center center;
+ background-repeat: no-repeat;
+ background-size: cover; /*cobrir a tela toda
+ background-attachment: fixed; o background NAO desce junto com a barra de rolagem */
+ background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+ background-size: cover;
+}
+
+main{
+  background-color: aliceblue;
+  max-width: 400px;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid darkcyan;
+  border-radius: 10px;
+}
+
+
