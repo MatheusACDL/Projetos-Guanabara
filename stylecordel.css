@@ -18,6 +18,10 @@ header, footer{
   text-align: center;
 }
 
+footer{
+  padding: 5px;
+}
+
 header > h1 {
   padding-top: 50px;
   font-variant: small-caps;
@@ -34,8 +38,8 @@ header a, footer a{
 }
 
 header a:hover, footer a:hover{
-  text-decoration: overline;
-  color: red;
+  color: rgb(255, 163, 42);
+  text-shadow: 2px 2px 4px   ;
 }
 
 section{
@@ -47,6 +51,9 @@ section{
   font-size: 3vw;
 }
 
+section > p{
+  padding-bottom: 2em;
+}
 
 .normal {
   background-color: white;
@@ -55,11 +62,22 @@ section{
 
 .imagem{
   background-color: rgb(83, 83, 83);
-  color: wheat;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.377);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right center;
 }
 
+#img001{
+  background-image: url(imagens/background001.jpg);
+}
+#img002{
+  background-image: url(imagens/background002.jpg);
+}
 .imagem > p{
   display: inline-block;
   padding: 5px;
-  background-color: rgba(127, 255, 212, 0.11);
+  background-color: rgba(94, 94, 94, 0.445);
 }
