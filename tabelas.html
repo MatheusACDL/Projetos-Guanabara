@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas</title>
+    <style>
+      body {
+        font-family: serif;
+      }
+
+      table {
+        height: 500px;
+        width: 500px;
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 1px solid black;
+        padding: 8px;
+         text-align: center; /* Alinhamento horizontal */
+        vertical-align: middle; /* Alinhamento vertical */
+      }
+
+      .grey {
+        background-color: rgba(128, 128, 128, 0.514);
+      }
+    </style>
+  </head>
+  <!-- HIERARQUIA DE TABELAS (simples)
+  TABLE = Tabela
+    Table Row = Linha de Tabela
+      Table Header = Cabeçalho de Tabela
+      Table Data = Dado de tabela -->
+  <body>
+    <h1>Minha primeira Tabela</h1>
+    <table>
+      <!-- primeira linha -->
+      <tr class="grey">
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+      </tr>
+      <!-- segunda linha -->
+      <tr>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+      </tr>
+      <!-- terceira linha -->
+      <tr class="grey">
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+      </tr>
+      <!-- quarta linha -->
+      <tr>
+        <td>J</td>
+        <td>K</td>
+        <td>L</td>
+      </tr>
+      <tr class="grey">
+        <td>M</td>
+        <td>N</td>
+        <tr>
+          <td>O</td>
+        </tr>
+      </tr>
+    </table>
+  </body>
+</html>
