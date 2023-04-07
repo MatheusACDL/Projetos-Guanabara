@@ -9,22 +9,34 @@
       body {
         font-family: serif;
       }
-
+      .container{
+        overflow-x: auto;
+      }
       table {
-        height: 500px;
-        width: 500px;
+        height: 600px;
+        width: 600px;
         border-collapse: collapse;
       }
 
       td {
         border: 1px solid black;
         padding: 8px;
-         text-align: center; /* Alinhamento horizontal */
+        text-align: center; /* Alinhamento horizontal */
         vertical-align: middle; /* Alinhamento vertical */
       }
 
       .grey {
         background-color: rgba(128, 128, 128, 0.514);
+      }
+
+      col.cNomes{
+        background-color: aqua;
+      }
+      col.cCor{
+        background-color: wheat;
+      }
+      col.cIdade{
+        border: 1px solid black;
       }
     </style>
   </head>
@@ -35,38 +47,73 @@
       Table Data = Dado de tabela -->
   <body>
     <h1>Minha primeira Tabela</h1>
-    <table>
-      <!-- primeira linha -->
-      <tr class="grey">
-        <td>A</td>
-        <td>B</td>
-        <td>C</td>
-      </tr>
-      <!-- segunda linha -->
-      <tr>
-        <td>D</td>
-        <td>E</td>
-        <td>F</td>
-      </tr>
-      <!-- terceira linha -->
-      <tr class="grey">
-        <td>G</td>
-        <td>H</td>
-        <td>I</td>
-      </tr>
-      <!-- quarta linha -->
-      <tr>
-        <td>J</td>
-        <td>K</td>
-        <td>L</td>
-      </tr>
-      <tr class="grey">
-        <td>M</td>
-        <td>N</td>
-        <tr>
-          <td>O</td>
+    <div class="container"> <!-- Deixar a coluna dentro de uma div, pra deixa-la RESPONSIVA-->
+      <table>
+        <!-- primeira linha -->
+        <tr class="grey">
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
         </tr>
-      </tr>
+        <!-- segunda linha -->
+        <tr>
+          <td>D</td>
+          <td>E</td>
+          <td>F</td>
+        </tr>
+        <!-- terceira linha -->
+        <tr class="grey">
+          <td>G</td>
+          <td>H</td>
+          <td>I</td>
+        </tr>
+        <!-- quarta linha -->
+        <tr>
+          <td>J</td>
+          <td>K</td>
+          <td>L</td>
+        </tr>
+        <tr class="grey">
+          <td>M</td>
+          <td>N</td>
+          <tr>
+            <td>O</td>
+          </tr>
+        </tr>
+      </table>
+    </div>
+    <br><br><br>
+<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~MODIFICANDO UMA COLUNA INTEIRA~~~~~~~~~~~~~~~~~~~~ -->
+    <table>
+      <colgroup>
+        <col class="cNomes">
+        <col class="cIdade">
+        <col class="cCor">
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">Nomes</th>
+          <th scope="col">Idade</th>
+          <th scope="col">Cor preferida</th>
+        </tr>
+      </thead>
+        <tbody>
+          <tr>
+            <td>João</td>
+            <td>20</td>
+            <td>Vermelho</td>
+          </tr>
+          <tr>
+            <td>Maria</td>
+            <td>19</td>
+            <td>Roxo</td>
+          </tr>
+          <tr>
+            <td>João Carlos</td>
+            <td>14</td>
+            <td>Preto</td>
+          </tr>
+        </tbody>
     </table>
   </body>
 </html>
