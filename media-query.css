@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+/* todas as demais midias */
+/* TYPICAL DEVIDE BREAKPOINTS */
+/* pequenas telas: até 600px
+celular: 600px até 768px
+tablet: 768px até 992px
+desktop: 992px até 1200px
+grandes telas: 1200px ++ */
+
+@media screen and (min-width: 768px) and (max-width: 992px){
+  body{
+    background: url(imagens/back-tablet.jpg) center center;
+  }
+  main{
+    width: 500px;
+  }
+  
+#icel{display: none;}
+#itablet{display: block;}
+#itv{display: none;}
+#iimp{display: none;}
+#ipc{display: none;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+  body{
+    background: url(imagens/back-pc.jpg) center center;
+  }
+
+  main{
+    width: 600px;
+  }
+  
+  
+#icel{display: none;}
+#itablet{display: none;}
+#itv{display: none;}
+#iimp{display: none;}
+#ipc{display: block;}
+}
+
+@media screen and (min-width: 1200px){
+  body{
+    background: url(imagens/back-tv.jpg) center center;
+  }
+  main{
+    width: 700px;
+  }
+  
+  
+#icel{display: none;}
+#itablet{display: none;}
+#itv{display: block;}
+#iimp{display: none;}
+#ipc{display: none;}
+}
+
+@media print {
+ main h1{
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: none;
+    color: black;
+  }
+  main{
+    border: 2px solid black;
+  }
+#icel{display: none;}
+#itablet{display: none;}
+#itv{display: none;}
+#iimp{display: block;}
+#ipc{display: none;}
+}
