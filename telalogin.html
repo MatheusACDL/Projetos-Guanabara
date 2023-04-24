@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style-login.css" />
     <link rel="stylesheet" href="login-media-queries.css" />
     <title>Login</title>
@@ -15,7 +19,40 @@
         <div id="formulario">
           <h1>Login</h1>
           <p>Bem Vindo. Faça o login para entrar.</p>
-          <form action="login.js" method="post"></form>
+          <form action="login.js" method="post" autocomplete="on">
+            <div class="campo">
+              <span id="" class="material-icons md-18">person</span>
+              <input
+                type="email"
+                name="login"
+                id="ilogin"
+                placeholder="Seu Email"
+                autocomplete="email"
+                required
+                maxlength="20"
+              />
+              <label for="ilogin">Login</label>
+            </div>
+            <div class="campo">
+              <span id="" class="material-icons md-18">vpn_key</span>
+              <input
+                type="password"
+                name="senha"
+                id="isenha"
+                placeholder="Sua senha"
+                autocomplete="current-password"
+                required
+                minlength="8"
+                maxlength="20"
+              />
+              <label for="isenha">Senha</label>
+            </div>
+            <input type="submit" value="Entrar" />
+            <a href="esqueci.html"
+              >Esqueci a Senha
+              <span id="" class="material-icons md-18">mail</span></a
+            >
+          </form>
         </div>
       </section>
     </main>
