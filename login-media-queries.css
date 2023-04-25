@@ -17,6 +17,13 @@
   #login > #formulario{
     float: right;
     width: 65%;
+    margin-top:100px;
+  }
+  input{
+    width: 80%;
+  }
+  #labelsenha{
+    font-size: .93em;
   }
 }
 
@@ -37,12 +44,16 @@
   #login > #formulario{
     float: left;
     width: 50%;
+    margin-top:150px;
   }
+  input{
+    width: 80%;
+  }
+
   h1{
     font-size: 2em;
   }
   p{
     font-size: 1.2em;
   }
-  
 }

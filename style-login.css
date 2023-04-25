@@ -61,3 +61,58 @@ p{
   text-align: center;
   font-size: 0.8em;
 }
+
+form > input[type=submit]{
+  display: block;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  background-color: #3D3859;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form > input[type=submit]:hover{
+  background-color:#8775A7 ;
+}
+
+form > .botao{
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  width: 100%;
+  height: 40px;
+  background-color: #3D3859;
+  margin-top: 5px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  padding-top: 6px;
+}
+#idspan1, #idspan2{
+  padding-top: 5px;
+}
+.botao > span{
+  font-size: .9em;
+}
+.botao:hover{
+  background-color: #8775A7;
+}
+
+.campo{
+  background-color: #4E6BA6;
+  display: block;
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  margin: 5px 0px;
+}
+
+#labelsenha{
+  font-size: .95em;
+}
+
+

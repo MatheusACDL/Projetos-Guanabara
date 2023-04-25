@@ -21,7 +21,7 @@
           <p>Bem Vindo. Faça o login para entrar.</p>
           <form action="login.js" method="post" autocomplete="on">
             <div class="campo">
-              <span id="" class="material-icons md-18">person</span>
+              <span id="idspan2" class="material-icons md-18">person</span>
               <input
                 type="email"
                 name="login"
@@ -34,7 +34,7 @@
               <label for="ilogin">Login</label>
             </div>
             <div class="campo">
-              <span id="" class="material-icons md-18">vpn_key</span>
+              <span id="idspan1" class="material-icons md-18">vpn_key</span>
               <input
                 type="password"
                 name="senha"
@@ -45,12 +45,11 @@
                 minlength="8"
                 maxlength="20"
               />
-              <label for="isenha">Senha</label>
+              <label for="isenha" id="labelsenha">Senha</label>
             </div>
-            <input type="submit" value="Entrar" />
-            <a href="esqueci.html"
-              >Esqueci a Senha
-              <span id="" class="material-icons md-18">mail</span></a
+            <input type="submit" value="Entrar" id="botao1" />
+            <a href="esqueci.html" class="botao"
+              >Esqueci a Senha <span class="material-icons md-18">mail</span></a
             >
           </form>
         </div>
